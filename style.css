@@ -1,0 +1,174 @@
+body{
+    background-color: bisque;
+    font-family: sans-serif;
+    letter-spacing:1px;
+}
+
+.image-profile{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width:100px;
+    height:100px;
+    border: 2px solid rgb(109, 6, 6);
+    border-radius:100%;
+}
+.name-profile{
+    
+    text-align: center;
+    padding: 30px;
+    font-size:28px;
+}
+
+.links{
+    text-align: center;
+    margin-top: 20px;
+    background-color: brown;
+    border:1px solid rgb(163, 34, 34);
+    border-width:2px;
+    border-radius: 15px;
+    padding:15px;
+    
+    
+    width:290px;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    
+    font-size: 18px;
+}
+
+
+/* animation links */
+.l1{
+    animation-name:a-links;
+    animation-duration: 2s;
+    animation-delay:2s;
+    animation-iteration-count:2;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+}
+.l24{
+    animation-name:a-links;
+    animation-duration: 2s;
+    animation-delay:7s;
+    animation-iteration-count:2;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+.l3{
+    animation-name:a-links;
+    animation-duration: 2s;
+    animation-delay:12s;
+    animation-iteration-count:2;
+    animation-direction: alternate;
+    
+}
+@keyframes a-links{
+0%{
+    transform: rotate(0deg);
+}
+50%{
+    transform: rotate(5deg);
+    
+}
+100%{
+    transform: rotate(-5deg);
+}
+
+
+}
+
+
+a{
+   text-decoration:none; 
+   color: snow; 
+}
+
+
+.name-maker{
+text-align: center;
+
+}
+.name-maker img{
+    position: relative;
+    top:9px;
+    width: 30px;
+    height:auto;
+    border:2px solid goldenrod;
+    border-radius:100%;
+    margin-right: 5px;
+}
+.name-maker a{
+    font-size: 20px;
+    margin-bottom:20px;
+}
+
+
+
+
+
+
+/* all responsive element */
+
+@media (min-width:600px){
+    body{
+        background-image: url('backc.jpg');
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+        background-attachment: fixed;
+        color: silver;
+        transition:3s; 
+    }
+    .name-maker a{
+        color: rgb(36, 36, 36);
+    }
+    .name-profile{
+        color: rgb(36, 36, 36);
+    }
+}
+/* simple responsive */
+@media (min-height:700px){
+     .all{
+        margin-top : 100px;
+     }
+}
+@media (min-height:800px){
+    .all{
+       margin-top : 150px;
+
+    }
+}
+@media (min-height:950px){
+    .all{
+       margin-top : 200px;
+
+    }
+}
+@media (min-height:1150px){
+    .all{
+       margin-top : 250px;
+
+    }
+}
+/* simple responsive */
+
+/* width */
+@media (max-width:600px ){
+    body{
+        
+        background-image: url('bachm.jpg');
+        background-repeat:no-repeat;
+        background-position: center;
+        object-fit: cover;
+        background-size: cover;
+        background-attachment: fixed;
+        color: silver; 
+        transition:3s; 
+    }
+   
+}
+
